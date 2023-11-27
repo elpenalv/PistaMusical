@@ -1,6 +1,7 @@
 package pistaMusical;
 
 import java.io.Serializable;
+import java.net.Socket;
 
 public class Jugador implements Serializable  {
 
@@ -14,6 +15,7 @@ public class Jugador implements Serializable  {
 	private String name;
 	private int puntuacion = 0;
 	private int turno;
+
 	
 	
 	public Jugador(int id, String name, int turno) {
@@ -21,7 +23,7 @@ public class Jugador implements Serializable  {
 		this.id = id;
 		this.name = name;
 		this.turno = turno;
-		
+
 	}
 	
 	
@@ -49,6 +51,9 @@ public class Jugador implements Serializable  {
 	public void setTurno(int turno) {
 		this.turno = turno;
 	}
+
+
+
 	
 	
 }
